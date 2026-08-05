@@ -1,5 +1,8 @@
 # EdTech Policy Framework
 
+**[Live demo / docs](https://freddricklogan.github.io/edtech-policy-framework/)** &nbsp;|&nbsp; [Portfolio](https://fredlogan.phd) &nbsp;|&nbsp; [All Projects](https://freddricklogan.github.io/projects/)
+
+
 ## Comprehensive Framework for Educational Technology Policy Development
 
 > A structured approach to designing, implementing, and governing educational technology policies for K-12 and higher education institutions.
