@@ -1,9 +1,0 @@
-.rb-form fieldset { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; padding: 8px 12px; margin: 0 0 12px; }
-.rb-form legend { font-weight: 600; padding: 0 6px; }
-.rb-row { display: grid; grid-template-columns: 1fr 200px; gap: 8px; align-items: center; padding: 3px 0; }
-@media (max-width: 600px) { .rb-row { grid-template-columns: 1fr; } }
-.rb-field { margin-bottom: 12px; } .rb-field input { width: 100%; box-sizing: border-box; padding: 6px; }
-.rb-out { border-left: 4px solid var(--md-primary-fg-color); padding: 8px 12px; margin: 12px 0; }
-.rb-outcome { font-weight: 700; } .rb-ok { color: #2e7d32; } .rb-bad { color: #c62828; } .rb-partial { color: #ef6c00; }
-.rb-fail { color: #c62828; }
-.rb-status pre { white-space: pre-wrap; font-size: .8rem; }
