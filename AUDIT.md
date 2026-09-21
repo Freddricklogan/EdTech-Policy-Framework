@@ -38,9 +38,13 @@ broken cross-reference fails the pipeline rather than shipping.
 
 ### B2 — Wrong-case URL
 The README's live link used `edtech-policy-framework` (lowercase). The
-repository is `EdTech-Policy-Framework`. GitHub Pages resolves project
-paths case-insensitively once the project site exists, so the old link
-keeps working; the canonical `site_url` uses the repository's casing.
+repository is `EdTech-Policy-Framework`. The lowercase path is served
+by a stale folder in the user-site repository, and after this
+repository's Pages went live it still returned that old copy (title
+"EdTech Policy Framework — Freddrick Logan"), while the exact-case
+path returned the new site. The canonical `site_url` uses the
+repository's casing; pruning the stale user-site folders is a
+separate, manual task.
 
 ### B3 — Material's GitHub widget
 `repo_url` in `mkdocs.yml` makes Material call the GitHub API for
