@@ -1,12 +1,13 @@
 /** Mounts the Executive Shell on every page; KPIs come from the rubric module, not typed in. */
 import { mountExecShell } from './shell/exec-shell.js';
-import { gotoTool } from './shell/tool-page.js';
+import { followScheme, gotoTool } from './shell/tool-page.js';
 import { CATEGORIES, THRESHOLDS } from './lib/rubric.js';
 
 const criteria = CATEGORIES.reduce((n, c) => n + c.criteria.length, 0);
 const thresholds = Object.keys(THRESHOLDS).length;
 
 mountExecShell({
+  theme: 'ember',
   title: 'EdTech Policy Framework',
   tagline: 'Policy design, governance, compliance, implementation guidance and a technology-evaluation rubric for educational institutions — published as a documentation site, with the rubric implemented as a scoring tool whose weights and thresholds are the document\'s own.',
   repo: 'https://github.com/Freddricklogan/EdTech-Policy-Framework',
@@ -24,3 +25,4 @@ mountExecShell({
   ],
   mainSelector: '.md-main'
 });
+followScheme();
